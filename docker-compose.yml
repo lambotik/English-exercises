@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/usr/workspace
     command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results"
-    working_dir: /usr/workspace
+    working_dir: /usr/workspace/English-exercises-AQA
 #    environment:
 #      - LOGIN=${LOGIN}
 #      - PASSWORD=${PASSWORD}
