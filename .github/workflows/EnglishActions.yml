@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Select dir
-        run: |
-          cd English-exercises-AQA
       - uses: actions/checkout@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
@@ -28,7 +25,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests
         run: |
-          pytest -s -vv --alluredir=allure-results 
+          cd ../English-exercises-AQA; pytest -s -vv --alluredir=allure-results 
 
       - name: Add allure information
         working-directory: allure-results
