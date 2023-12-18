@@ -1,6 +1,6 @@
 import allure
-from pages.chapter1.prepositions.Prepositions import PrepositionsPages
-from pages.chapter2.irregular_verbs import IrregularVerbsPages
+from ..pages.chapter1.prepositions.Prepositions import PrepositionsPages
+from ..pages.chapter2.irregular_verbs import IrregularVerbsPages
 
 
 @allure.suite('Chapter 2')

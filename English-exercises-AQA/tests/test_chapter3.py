@@ -1,5 +1,5 @@
 import allure
-from pages.chapter1.prepositions.Prepositions import PrepositionsPages
+from ..pages.chapter1.prepositions.Prepositions import PrepositionsPages
 
 
 @allure.suite('Chapter 3')
